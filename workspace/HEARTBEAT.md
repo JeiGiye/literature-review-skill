@@ -1,5 +1,34 @@
-# HEARTBEAT.md
+# Heartbeat Tasks
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 减脂计划跟踪（3个月计划：2026-02-24 ~ 2026-05-24）
 
-# Add tasks below when you want the agent to check something periodically.
+### 每日检查（周一至周日）
+- 提醒记录体重（晨起空腹）
+- 提醒记录腰围（每周一）
+- 检查今日运动计划是否完成
+- 提醒每日饮水量目标（2-2.5L）
+
+### 周末检查（周六/周日）
+- 提醒准备下周午餐食材（批量备餐）
+- 查看本周完成度并给予鼓励
+- 更新 memory/heartbeat-state.json 记录检查状态
+
+## 时机原则
+- **回复提醒时**：当周进度良好时给予鼓励和正向反馈
+- **静默时回复 HEARTBEAT_OK**：以下情况
+  - 晚间（23:00-08:00）除非紧急
+  - 人类明显忙碌时
+  - 最近30分钟内刚检查过
+  - 无新进展需要关注
+
+## 记忆维护（每3-5天）
+- 检查最近 2-3 天的 memory/YYYY-MM-DD.md
+- 提取重要内容到 MEMORY.md
+- 清理过期的短期记录
+
+## 静默条件
+如果以下所有条件满足，回复 HEARTBEAT_OK：
+- 非紧急情况
+- 不是用户主动的 heartbeat 触发
+- 无重要进展需要汇报
+- 时间在晚间（23:00-08:00）

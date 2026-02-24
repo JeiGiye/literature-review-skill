@@ -1,0 +1,18 @@
+{
+  "lastChecks": {
+    "weight": null,
+    "waist": null,
+    "exercise": null,
+    "water": null,
+    "mealPrep": null,
+    "memoryMaintenance": null
+  },
+  "fatLossProgress": {
+    "startDate": "2026-02-24",
+    "targetDate": "2026-05-24",
+    "initialWeight": 74.0,
+    "initialWaist": null,
+    "currentWeek": 1,
+    "completedWeeks": []
+  }
+}
